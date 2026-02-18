@@ -2,59 +2,167 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Política de Privacidad - Rapinota</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Términos y Transparencia - Rapinota</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --rapinota-blue: #1565C0;
+            --rapinota-bg: #F2F6FC;
+            --rapinota-card: #FFFFFF;
+            --text-main: #1A1C1E;
+            --text-secondary: #4A4E55;
+            --border: #E0E0E0;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            max-width: 600px;
-            margin: 40px auto;
-            padding: 0 15px;
-            color: #333;
+            font-family: 'Inter', -apple-system, sans-serif;
+            background-color: var(--rapinota-bg);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
             line-height: 1.6;
-            background: #f9f9f9;
         }
-        h1 {
+
+        header {
+            background-color: var(--rapinota-blue);
+            color: white;
+            padding: 24px 16px;
             text-align: center;
-            margin-bottom: 30px;
-            color: #0055a5;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        h2 {
-            margin-top: 30px;
-            color: #003366;
+
+        header h1 {
+            margin: 0;
+            font-size: 1.25rem;
+            font-weight: 700;
         }
-        ul {
-            list-style: disc inside;
-            margin-left: 20px;
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 24px 16px;
+        }
+
+        .hero-text {
+            color: var(--rapinota-blue);
+            font-weight: 800;
+            font-size: 1.5rem;
+            margin-bottom: 24px;
+            text-align: left;
+        }
+
+        .card {
+            background: var(--rapinota-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 16px;
+            display: flex;
+            gap: 16px;
+        }
+
+        .icon-box {
+            background-color: rgba(21, 101, 192, 0.1);
+            color: var(--rapinota-blue);
+            min-width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .card-content h2 {
+            margin: 0 0 8px 0;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        .card-content p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            text-align: justify;
+        }
+
+        footer {
+            text-align: center;
+            padding: 32px 16px;
+            color: #757575;
+            font-size: 0.8rem;
+        }
+
+        /* Responsive simple */
+        @media (max-width: 480px) {
+            .hero-text { font-size: 1.3rem; }
         }
     </style>
 </head>
 <body>
-    <h1>Política de Privacidad - Rapinota</h1>
-    <p>Al usar Rapinota acepta los términos de esta Política de Privacidad.</p>
 
-    <h2>1. Datos almacenados</h2>
-    <ul>
-        <li>Todas sus notas de ventas se guardan solo en su dispositivo.</li>
-        <li>No recopilamos información personal en servidores externos.</li>
-    </ul>
+    <header>
+        <h1>Términos y Transparencia</h1>
+    </header>
 
-    <h2>2. Uso de la información</h2>
-    <ul>
-        <li>Solo se usa para gestionar sus notas de ventas y registros.</li>
-        <li>No compartimos datos con terceros.</li>
-    </ul>
+    <div class="container">
+        <div class="hero-text">Cuentas claras, amistades largas.</div>
 
-    <h2>3. Seguridad</h2>
-    <ul>
-        <li>La app implementa prácticas de seguridad para proteger los datos locales.</li>
-        <li>Recomendamos respaldar sus notas de ventas regularmente.</li>
-    </ul>
+        <div class="card">
+            <div class="icon-box">1</div>
+            <div class="card-content">
+                <h2>Uso y SUNAT</h2>
+                <p>Rapinota es tu cuaderno digital para el control interno. <strong>NO</strong> es un sistema de facturación electrónica conectado a SUNAT. Tú eres responsable de emitir tus boletas fiscales si corresponde.</p>
+            </div>
+        </div>
 
-    <h2>4. Cambios en la política</h2>
-    <ul>
-        <li>Nos reservamos el derecho de actualizar esta política cuando sea necesario.</li>
-        <li>Se recomienda revisar la política de privacidad periódicamente para estar informado.</li>
-    </ul>
+        <div class="card">
+            <div class="icon-box">2</div>
+            <div class="card-content">
+                <h2>Privacidad Total</h2>
+                <p>La información se guarda en este celular. Rapinota no comparte tus datos con terceros.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon-box">3</div>
+            <div class="card-content">
+                <h2>Suscripción y Dispositivos</h2>
+                <p>Por S/ 19.90 al mes, activas tu cuenta en hasta 5 celulares. Cada equipo funciona como una libreta independiente; los datos no se mezclan.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon-box">4</div>
+            <div class="card-content">
+                <h2>Protege tu Esfuerzo</h2>
+                <p>Si pierdes tu equipo o borras la App, los datos se pierden. ¡Usa <strong>"Exportar Excel"</strong> seguido para tener tu respaldo!</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon-box">5</div>
+            <div class="card-content">
+                <h2>Privacidad de Cuenta</h2>
+                <p>Usamos tu Gmail solo para validar tu suscripción activa. Cero spam.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon-box">6</div>
+            <div class="card-content">
+                <h2>Actualizaciones</h2>
+                <p>Podemos actualizar estos términos para mejorar. Si hay cambios en precios o condiciones, te avisaremos con total transparencia.</p>
+            </div>
+        </div>
+
+        <footer>
+            Hecho con ❤️ para emprendedores<br>
+            Actualización: Febrero 2026
+        </footer>
+    </div>
+
 </body>
 </html>
